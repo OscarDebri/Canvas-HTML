@@ -1,150 +1,16 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title> Processing.JS dentro de página HTML </title>
-	</head>
-	<body>
-		<canvas id="miLienzo1"> </canvas>
-		<canvas id="milienzo2"> </canvas>
-		<canvas id="milienzo3"> </canvas>
-		<canvas id="milienzo4"> </canvas>
-		<canvas id="milienzo5"> </canvas>	
-	</body>
-	<script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script
-	>
-	<script>
-	var codigodeprograma1 = function(instanciaProcessing) {
-		with (instanciaProcessing) {
-			size(400,400);
-			frameRate(30);
-			rect(0, 300, 400, 100); 
-
-			ellipse(200, 300, 150, 150);
-			ellipse(200, 200, 100, 100);
-			ellipse(200, 120, 75, 75);
-
-			line(160,200,100,100);
-
-			line(240,200,300,100);
-		}};
-
-	var codigodeprograma2 = function(instanciaProcessing) {
-		with (instanciaProcessing) {
-			size(400,400);
-			frameRate(30);
-			background(97, 214, 198);
-
-			// The ground
-			fill(0, 255, 64);
-			rect(0, 300, 400, 100);  
-
-			// The sun
-			fill(242, 215, 14);
-			ellipse(80, 64, 100, 100);  
-
-			// The snowman
-			fill(255, 255, 255);
-			ellipse(200, 300, 150, 150);
-			ellipse(200, 200, 100, 100);
-			ellipse(200, 120, 75, 75);
-		}};
-
-	var codigodeprograma3 = function(instanciaProcessing) {
-		with (instanciaProcessing) {
-			size(400,400);
-			frameRate(30);
-			background(186, 145, 20); // wooden table
-			ellipse(200, 200, 350, 350); // plate
-			ellipse(200, 200, 300, 300); 
-
-			fill(212, 124, 237);
-			ellipse(180,150,30,30);
-			ellipse(205,150,30,30);
-			ellipse(158,150,30,30);
-			ellipse(190,170,30,30);
-			ellipse(165,170,30,30);
-			ellipse(175,190,30,30);
-
-			fill(230, 230, 23);
-			rect(270, 70, 100, 150);
-			fill(186, 177, 177);
-			rect(300,30,10,40);
-			rect(260,20,50,10);
-
-			fill(240, 235, 147);
-			triangle(200,300,30,220,120,110);
-
-			fill(255, 0, 0);
-			ellipse(100,200,20,20);
-			ellipse(135,190,20,20);
-			ellipse(140,220,20,20);
-			ellipse(100,230,20,20);
-			ellipse(130,250,20,20);
-			ellipse(155,250,20,20);
-		}};
-
-	var codigodeprograma4 = function(instanciaProcessing) {
-		with (instanciaProcessing) {
-			size(400,400);
-			frameRate(30);
-			var eyeSize = 30;
-
-			ellipse(150, 70, 60, 120);  // left ear
-			ellipse(240, 70, 60, 120);  // right ear
-
-			ellipse(200, 170, 150, 150);    // face
-
-			fill(0, 0, 0);
-			ellipse(170, 150, eyeSize, eyeSize);  // left eye
-			ellipse(230, 150, eyeSize, eyeSize);  // right eye
-
-			line(150, 200, 250, 200);   // mouth
-
-			noFill();
-			var lenght = 20;
-			rect(185, 200, 15, lenght); // left tooth
-			rect(200, 200, 15, lenght); // right tooth
-		}};
-
-	var codigodeprograma5 = function(instanciaProcessing) {
-		with (instanciaProcessing) {
-			size(400,400);
-			frameRate(30);
-			var x = 200;
-			var y = 250;
-
-			noStroke();
-			fill(30, 204, 91); // a nice froggy green!
-
-			ellipse(x, y, 200, 100); // face
-			ellipse(x - 50, y - 50, 40, 40); // left eye socket
-			ellipse(x + 50, y - 50, 40, 40); // right eye socket
-
-			fill(255, 255, 255); // for the whites of the eyes!
-			ellipse(x - 50, y - 50, 30, 30); // left eyeball
-			ellipse(x + 50, y - 50, 30, 30); // right eyeball
-
-			fill(0, 0, 0);
-			ellipse(x , y, 120, 60);
-
-			rect(x - 55, y - 50, 10, 10);
-			rect(x + 45, y - 50, 10, 10);
-		}};
-
-	var canvas1 = document.getElementById("miLienzo1");
-	var instanciaProcessing1 = new Processing(canvas1, codigodeprograma1);
-
-	var canvas2 = document.getElementById("miLienzo2");
-	var instanciaProcessing2 = new Processing(canvas2, codigodeprograma2);
-
-	var canvas3 = document.getElementById("miLienzo3");
-	var instanciaProcessing3 = new Processing(canvas3, codigodeprograma3);
-
-	var canvas4 = document.getElementById("miLienzo4");
-	var instanciaProcessing4 = new Processing(canvas4, codigodeprograma4);
-
-	var canvas5 = document.getElementById("miLienzo5");
-	var instanciaProcessing5 = new Processing(canvas5, codigodeprograma5);
-
-	</script>
+  <head>
+    <title>Representación de trazos, líneas y polígonos</title>
+  </head>
+  <body>
+    <h1>Ejercicios disponibles</h1>
+    <ul>
+      <li><a href="Mono_Nieve.html">Ejercicio 1</a></li>
+      <li><a href="Dia_soleado.html">Ejercicio 2</a></li>
+      <li><a href="Cena.html">Ejercicio 3</a></li>
+      <li><a href="Conejo_buckthoot.html">Ejercicio 4</a></li>
+      <li><a href="Rana_Rene.html">Ejercicio 5</a></li>
+    </ul>
+  </body>
 </html>
